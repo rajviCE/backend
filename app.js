@@ -43,7 +43,7 @@ console.log('Stripe Secret Key:', process.env.STRIPE_SECRET_KEY);
   .catch((e) => console.log(e));
 //! Cors config
 const corsOptions = {
-  origin: ["http://localhost:5173"],
+  origin: ["https://frontend7-6mma.onrender.com"],
 };
 app.use((req, res, next) => {
   console.log(`🟢 Incoming Request: ${req.method} ${req.url}`);
